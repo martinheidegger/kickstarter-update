@@ -1,1 +1,93 @@
-Hello world. {{pledged}}
+
+<style>
+
+body {
+    margin:0;
+    padding:0;
+}
+
+#stretch {
+    width: 580px;
+    height: 205px;
+    padding: 20px;
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    background: #EEF2EA;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    margin:0;
+    font-weight: 200;
+}
+
+a {
+    color: #000;
+}
+
+.progress {
+    position: relative;
+    background: #D0D5CB;
+    border-radius: 15px;
+    width: 100%;
+    height:12px;
+    margin:40px 0 20px 0;
+}
+
+.sofar {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width: {{percentToStrechGoal}}%;
+    background: #76CC1E;
+    border-radius: 15px;
+}
+
+.stats, .goal {
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.total, .percent {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 14px;
+    line-height: 14px;
+    color: #848880;
+    font-weight: 200;
+}
+
+.goal {
+    margin-left: 15px;
+    padding-left: 20px;
+    border-left: #B9C1B0 1px solid;
+}
+
+</style>
+
+<div id="stretch">
+    <h1>Fully funded, but far from finished.</h1>
+    <p>We've hit our first target - thank you so much! Now we're going for the stretch.<br />
+        <a href="#">Click here</a> to read about what will happen if we hit this target!</p>
+    <div class="progress">
+        <div class="sofar"></div>
+    </div>
+    <div class="stats">
+        <div class="percent">{{percentToStrechGoal}}%</div>
+        <div class="label">funded</div>
+    </div>
+    <div class="goal">
+        <div class="total">{{strechGoal}}</div>
+        <div class="label">stretch goal</div>
+    </div>
+</div>
