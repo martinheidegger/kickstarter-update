@@ -21,10 +21,9 @@
     "handlebars": "~1.0.10",
     "express": "~3.2.1",
     "hbs": "~2.1.0",
-    "jQuery": "~1.7.4",
     "jsdom": "~0.6.0",
-    "xmlhttprequest": "~1.5.0",
     "webshot": "~0.3.3",
-    "accounting": "~0.3.2"
+    "accounting": "~0.3.2",
+    "cheerio": "~0.11.0"
   }
 }
