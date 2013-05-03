@@ -1,4 +1,6 @@
 kickstarter-update
 ==================
 
-Generates a image from a html page which content is updated from a kickstarter project.
+This script generates a screenshot for the data of your kickstarter-profil and uploads it to S3.
+
+All you need to do is fill out the properties with <placeholders>.

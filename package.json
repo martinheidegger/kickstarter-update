@@ -1,13 +1,13 @@
 {
   "name": "kickstarter-update",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "Generates a image from a html page which content is updated from a kickstarter project.",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "start": "node sample.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "",
@@ -18,12 +18,12 @@
   "author": "Martin Heidegger <mh@leichtgewicht.at>",
   "license": "BSD",
   "dependencies": {
-    "handlebars": "~1.0.10",
     "express": "~3.2.1",
     "hbs": "~2.1.0",
     "jsdom": "~0.6.0",
     "webshot": "~0.3.3",
     "accounting": "~0.3.2",
-    "request": "~2.21.0"
+    "request": "~2.21.0",
+    "aws-sdk": "~0.9.9-pre.10"
   }
 }

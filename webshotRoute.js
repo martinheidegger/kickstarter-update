@@ -7,7 +7,6 @@ module.exports = function(prefix, webshotOptions) {
         var myoptions = webshotOptions[template] || webshotOptions['default'] || webshotOptions;
         webshot(url, myoptions, function(err, renderStream) {
             res.type(myoptions.type || 'png');
-            var data = renderStream.toString('binary');
             renderStream.on('data', function(data) {
                 res.write(data.toString('binary'), 'binary');
             });

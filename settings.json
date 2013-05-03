@@ -1,0 +1,23 @@
+{
+    "kickstarter": { 
+        "url": "<your kickstater url like: http://www.kickstarter.com/projects/johnonolan/ghost-just-a-blogging-platform>",
+        "currency": "<your project currency>",
+        "strechGoal": [999]
+    },
+    "pushToS3": true,  
+    "port": 7337, 
+    "Bucket": "<your-s3-bucket>",
+    "accessKeyId": "<your-s3-key-id>",
+    "secretAccessKey": "<your-s3-access-key>",
+    "maxAgeInSeconds": 900,
+    "prefix": "http://localhost:7337/",
+    "webshot": {
+        "strechGoal1": {
+            "screenSize": {
+                "width": 620,
+                "height": 245
+            }
+        }
+    },
+    "checkInterval": 15
+}
