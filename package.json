@@ -1,6 +1,6 @@
 {
   "name": "kickstarter-update",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Generates a image from a html page which content is updated from a kickstarter project.",
   "main": "index.js",
   "directories": {
