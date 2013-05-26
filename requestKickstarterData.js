@@ -3,7 +3,7 @@ var request = require('request');
 
 module.exports = function(opts, onComplete) {
     // Request the project
-    request(opts.url+"/stats.json", 
+    request(opts.url+'/stats.json', 
             function(error, response, data) {
                 if(error) {
                     onComplete(error, response);

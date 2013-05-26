@@ -9,15 +9,31 @@
     "Bucket": "<your-s3-bucket>",
     "accessKeyId": "<your-s3-key-id>",
     "secretAccessKey": "<your-s3-access-key>",
-    "maxAgeInSeconds": 900,
     "prefix": "http://localhost:7337/",
     "webshot": {
         "strechGoal1": {
             "screenSize": {
                 "width": 620,
                 "height": 245
+            },
+            "maxAgeInSeconds": 900,
+            "checkInterval": 15000
+        },
+        "strechGoal1b": {
+            "screenSize": {
+                "width": 620,
+                "height": 245
+            },
+            "maxAgeInSeconds": 900,
+            "checkInterval": 15000
+        },
+        "countdown": {
+            "screenSize": {
+                "width": 620,
+                "height": 245
+            },
+            "maxAgeInSeconds": 45,
+            "checkInterval": 15000
             }
         }
-    },
-    "checkInterval": 15
 }
