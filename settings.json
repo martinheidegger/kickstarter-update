@@ -32,8 +32,8 @@
                 "width": 620,
                 "height": 245
             },
-            "maxAgeInSeconds": 45,
-            "checkInterval": 15000
-            }
+            "maxAgeInSeconds": 18,
+            "checkInterval": 5000
         }
+    }
 }
