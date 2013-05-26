@@ -52,11 +52,14 @@ function updateView(view, opts, s3, busy) {
                 var now = Date.now();
                 var lastModified = new Date(header.LastModified).getTime();
                 var secondsSince = ((now - lastModified) / 1000) | 0;
-                if(secondsSince > opts.maxAgeInSeconds) {
+                if(secondsSince > opts.webshot.maxAgeInSeconds) {
                     createView(Key, opts, s3, function(){
                         busy[view] = false;
                     });
                 } else {
+                    if(false) {
+                        console.info('No need to update '+view+', the s3 version was last modified '+secondsSince+'s ago. (max: '+opts.webshot.maxAgeInSeconds+'s)');
+                    }
                     busy[view] = false;
                 }
             }
